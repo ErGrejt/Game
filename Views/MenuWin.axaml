@@ -1,0 +1,103 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Game.Views.MenuWin">
+    
+    <UserControl.Styles>
+        <Style Selector="Button:pointerover/template/ContentPresenter">
+            <Setter Property="Background" Value="white"></Setter>
+        </Style>
+    </UserControl.Styles>
+    
+        <Grid>
+            <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" Source="./../Assets/a2e7806013c11e9cea8fa00b1bd049f4.jpg"/> 
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="75*" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="0"/>
+            <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock  Text="Breakout" FontFamily="Impact" FontSize="42" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#A8A8A8"/>
+                <TextBlock Grid.Row="1" Text="Projekt na zaliczenie" FontFamily="Impact" FontSize="38" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#A8A8A8"/>
+            </Grid>
+            <TextBlock Grid.Column="2" Grid.Row="0"/>
+            <TextBlock Grid.Column="0" Grid.Row="1"/>
+            <Grid Grid.Column="1" Grid.Row="1" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Content="Nowa gra" 
+                        Width="200" 
+                        Height="50" 
+                        Background="Gray" 
+                        Foreground="White" 
+                        VerticalContentAlignment="Center" 
+                        HorizontalContentAlignment="Center" 
+                        BorderThickness="2" 
+                        FontSize="20" 
+                        HorizontalAlignment="Center"
+                        Command="{Binding ClickGameBreakout}"/>
+                <Button Grid.Row="1" 
+                        Content="Ustawienia" 
+                        Width="200" 
+                        Height="50" 
+                        Background="Gray" 
+                        Foreground="White" 
+                        VerticalContentAlignment="Center" 
+                        HorizontalContentAlignment="Center" 
+                        BorderThickness="2" 
+                        FontSize="20" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Command="{Binding ClickSettingsWin}"/> 
+            
+                <Button Grid.Row="2" 
+                        Content="Informacje o grze" 
+                        Width="200" 
+                        Height="50" 
+                        Background="Gray" 
+                        Foreground="White" 
+                        VerticalContentAlignment="Center" 
+                        HorizontalContentAlignment="Center" 
+                        BorderThickness="2" 
+                        FontSize="20" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        Command="{Binding ClickGameInfoWindow}">
+                </Button>
+                <Button Grid.Row="3" 
+                        Content="Wyjście" 
+                        Width="200" 
+                        Height="50" 
+                        Background="Gray" 
+                        Foreground="White" 
+                        VerticalContentAlignment="Center" 
+                        HorizontalContentAlignment="Center" 
+                        BorderThickness="2" 
+                        FontSize="20" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Click="CloseMenuClick"/>
+            </Grid>
+            <TextBlock Grid.Column="2" Grid.Row="1"/>
+        </Grid>
+    
+    
+</UserControl>
+

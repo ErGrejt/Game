@@ -1,0 +1,45 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Game.Views.GameInfoWin">
+            
+<UserControl.Styles>
+        <Style Selector="Button:pointerover/template/ContentPresenter">
+            <Setter Property="Background" Value="white"></Setter>
+        </Style>
+    </UserControl.Styles>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" Source="./../Assets/a2e7806013c11e9cea8fa00b1bd049f4.jpg"/> 
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="25*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="1"  Text="Witaj w grze Breakout!" FontFamily="Impact" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="#A8A8A8" VerticalAlignment="Bottom"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Twoim zadaniem jest zniszczyć wszystkie klocki, uważając na spadającą piłeczkę." FontFamily="Impact" FontSize="30" FontWeight="Bold"   Foreground="#A8A8A8" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Sterowanie odbywa się za pomocą lewej i prawej strzałki na klawiaturze." FontFamily="Impact" FontSize="28" FontWeight="Bold"   Foreground="#A8A8A8" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Grid.Row="3" Grid.Column="1" 
+                Content="Powrót" 
+                FontSize="20" 
+                HorizontalAlignment="Center"  
+                Width="200" 
+                Background="Gray" 
+                Foreground="White" 
+                VerticalAlignment="Top"
+                VerticalContentAlignment="Center" 
+                HorizontalContentAlignment="Center" 
+                Command="{Binding ClickMenuWindow}"/>
+        
+        </Grid>
+    
+</UserControl>
