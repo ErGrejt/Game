@@ -1,9 +1,8 @@
 using System;
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Shapes;
 using Avalonia.Media;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+
 
 namespace Game.Models;
 

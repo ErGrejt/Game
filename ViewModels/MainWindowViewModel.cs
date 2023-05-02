@@ -14,7 +14,6 @@ public partial class MainWindowViewModel : ObservableObject
         MyReferences.MenuWindow = new MenuWin();
         MyReferences.GameInfo = new GameInfoWin();
         MyReferences.GameBreakout = new GameBreakout();
-        MyReferences.SettingsWin = new SettingsWin();
         MyReferences.MainWindowOb.ChangeContent(MyReferences.MenuWindow);
     }
 }

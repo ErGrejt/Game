@@ -10,6 +10,6 @@ public static class MyReferences
     public static UserControl GameBreakout;
     public static UserControl GameInfo;
     public static UserControl MenuWindow;
-    public static UserControl SettingsWin;
+    
 
 }

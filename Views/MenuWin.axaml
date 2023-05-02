@@ -53,19 +53,6 @@
                         FontSize="20" 
                         HorizontalAlignment="Center"
                         Command="{Binding ClickGameBreakout}"/>
-                <Button Grid.Row="1" 
-                        Content="Ustawienia" 
-                        Width="200" 
-                        Height="50" 
-                        Background="Gray" 
-                        Foreground="White" 
-                        VerticalContentAlignment="Center" 
-                        HorizontalContentAlignment="Center" 
-                        BorderThickness="2" 
-                        FontSize="20" 
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center" 
-                        Command="{Binding ClickSettingsWin}"/> 
             
                 <Button Grid.Row="2" 
                         Content="Informacje o grze" 

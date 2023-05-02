@@ -29,10 +29,5 @@ public partial class MenuWindowViewModel : ObservableObject
         MyReferences.MainWindowOb.Content = control;
     }
 
-    [RelayCommand]
-    public void ClickSettingsWin()
-    {
-        MyReferences.MainWindowOb.ChangeContent(MyReferences.SettingsWin);
-    }
-    
+
 }

@@ -5,10 +5,9 @@ using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Primitives.PopupPositioning;
 using Avalonia.Data;
 using Avalonia.Input;
-using Avalonia.Layout;
 using Avalonia.Media;
 using Avalonia.Threading;
-using Game.ViewModels;
+
 
 namespace Game.Models;
 
@@ -317,6 +316,7 @@ public class GameBoard : Canvas
         // Sprawdzamy kolizjce paletki i cegiełek
         CheckPaddleCollision();
         CheckBrickCollision();
+        
 
         // Sprwadzamy czy gra się skonczyła
         CheckGameOver();
@@ -345,6 +345,9 @@ public class GameBoard : Canvas
    
     private void CheckBrickCollision()
     {
+        
+        
+        
         
         var ballRect = new Rect(Canvas.GetLeft(ball), Canvas.GetTop(ball), ball.Width, ball.Height);
 
@@ -378,6 +381,9 @@ public class GameBoard : Canvas
                     
                     bricksDestroyed++;
                     
+                    
+
+
                     return;
                 }
             }
@@ -417,6 +423,7 @@ public class GameBoard : Canvas
         
         paddle.Move(point.X - 50);
     }
+
     
     
 }
